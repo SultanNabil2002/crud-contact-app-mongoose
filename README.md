@@ -63,38 +63,38 @@ cd contact-manager-api
 npm install
 ```
 
-3. Konfigurasi Database
+### 3. Konfigurasi Database
 Buat file bernama .env di folder root (sejajar dengan package.json). Copy kode di bawah ini dan sesuaikan root serta password database Anda (jika ada):
 ```bash
 # Format: mysql://USER:PASSWORD@HOST:PORT/NAMA_DATABASE
 DATABASE_URL="mysql://root:@localhost:3306/belajar_nodejs_restful_api"
 ```
 
-4. Migrasi Database
+### 4. Migrasi Database
 Jalankan perintah Prisma untuk membuat tabel-tabel di database MySQL Anda secara otomatis:
 ```bash
 npx prisma migrate dev
 ```
 
-5. Menjalankan Aplikasi
+### 5. Menjalankan Aplikasi
 Untuk menjalankan server dalam mode production/development:
 ```bash
 npm start
 ```
-Server akan berjalan di http://localhost:3000.
+- Server akan berjalan di http://localhost:3000.
 
-🧪 Menjalankan Testing
+### 🧪 Menjalankan Testing
 Project ini memiliki test coverage yang lengkap untuk setiap endpoint menggunakan Jest dan Supertest. Pastikan database MySQL menyala sebelum menjalankan test.
 ```bash
 # Menjalankan semua unit test secara berurutan
 npm test
 ```
 
-📝 API Documentation
+### 📝 API Documentation
 Dokumentasi endpoint tersedia dalam format .http yang sangat mudah digunakan langsung di text editor.
 
-File: Lihat file test.http di dalam project.
+- File: Lihat file test.http di dalam project.
 
-Cara Pakai: Install extension REST Client di VS Code, lalu klik tombol "Send Request" yang muncul di file tersebut untuk mencoba API secara langsung.
+- Cara Pakai: Install extension REST Client di VS Code, lalu klik tombol "Send Request" yang muncul di file tersebut untuk mencoba API secara langsung.
 
-Author: Sultan Nabil
+- Author: Sultan Nabil
