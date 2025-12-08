@@ -57,39 +57,39 @@ Pastikan Anda sudah menginstall:
 
 ### 2. Instalasi
 Clone repository ini, masuk ke foldernya, dan install dependencies:
-
 ```bash
 git clone [https://github.com/SultanNabil2002/contact-manager-api.git](https://github.com/SultanNabil2002/contact-manager-api.git)
 cd contact-manager-api
 npm install
+```
+
 3. Konfigurasi Database
 Buat file bernama .env di folder root (sejajar dengan package.json). Copy kode di bawah ini dan sesuaikan root serta password database Anda (jika ada):
-
-Cuplikan kode
-
+```bash
 # Format: mysql://USER:PASSWORD@HOST:PORT/NAMA_DATABASE
 DATABASE_URL="mysql://root:@localhost:3306/belajar_nodejs_restful_api"
+```
+
 4. Migrasi Database
 Jalankan perintah Prisma untuk membuat tabel-tabel di database MySQL Anda secara otomatis:
-
-Bash
-
+```bash
 npx prisma migrate dev
+```
+
 5. Menjalankan Aplikasi
 Untuk menjalankan server dalam mode production/development:
-
-Bash
-
+```bash
 npm start
+```
 Server akan berjalan di http://localhost:3000.
 
 🧪 Menjalankan Testing
 Project ini memiliki test coverage yang lengkap untuk setiap endpoint menggunakan Jest dan Supertest. Pastikan database MySQL menyala sebelum menjalankan test.
-
-Bash
-
+```bash
 # Menjalankan semua unit test secara berurutan
 npm test
+```
+
 📝 API Documentation
 Dokumentasi endpoint tersedia dalam format .http yang sangat mudah digunakan langsung di text editor.
 
